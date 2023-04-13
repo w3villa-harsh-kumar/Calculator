@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcultor</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Default"
+disabled
+      href="/css/app-af6a05f42b013986b481566363f0186f.css?vsn=d"
+    >
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+
+      href="/css/app-wa-cc491567b46eab1188c6538ebc462e7d.css?vsn=d"
+    >
+
+      <link
+        rel="stylesheet"
+
+        href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
+      >
+
+      <link
+        rel="stylesheet"
+
+        href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css"
+      >
+
+      <link
+        rel="stylesheet"
+
+        href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css"
+      >
+
+      <link
+        rel="stylesheet"
+
+        href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css"
+      >
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator-screen">
+            <input id="calculator-screen" type="text" value="0" disabled>
+        </div>
+        <div class="calculator-keys">
+            <button type="button" onclick="handleKeyPressAndCalculation(this)" class="operator" value="backspace"><i class="fa-solid fa-arrow-left"></i></button>
+            <button type="button" onclick="handleKeyPressAndCalculation(this)" class="all-clear" value="all-clear">AC</button>
+            <button type="button" onclick="handleKeyPressAndCalculation(this)" class="operator" value="(">(</button>
+            <button type="button" onclick="handleKeyPressAndCalculation(this)" class="operator" value=")">)</button>
+            <button type="button" onclick="handleKeyPressAndCalculation(this)" value="7">7</button>
+            <button type="button" onclick="handleKeyPressAndCalculation(this)" value="8">8</button>
+            <button type="button" onclick="handleKeyPressAndCalculation(this)" value="9">9</button>
+            <button type="button" onclick="handleKeyPressAndCalculation(this)" class="operator" value="/">&divide;</button>
+            <button type="button" onclick="handleKeyPressAndCalculation(this)" value="4">4</button>
+            <button type="button" onclick="handleKeyPressAndCalculation(this)" value="5">5</button>
+            <button type="button" onclick="handleKeyPressAndCalculation(this)" value="6">6</button>
+            <button type="button" onclick="handleKeyPressAndCalculation(this)" class="operator" value="*">&times;</button>
+            <button type="button" onclick="handleKeyPressAndCalculation(this)" value="1">1</button>
+            <button type="button" onclick="handleKeyPressAndCalculation(this)" value="2">2</button>
+            <button type="button" onclick="handleKeyPressAndCalculation(this)" value="3">3</button>
+            <button type="button" onclick="handleKeyPressAndCalculation(this)" class="operator" value="-">-</button>
+            <button type="button" onclick="handleKeyPressAndCalculation(this)" value="0">0</button>
+            <button type="button" onclick="handleKeyPressAndCalculation(this)" class="decimal" value=".">.</button>
+            <button type="button" onclick="handleKeyPressAndCalculation(this)" class="equal-sign" value="=">=</button>
+            <button type="button" onclick="handleKeyPressAndCalculation(this)" class="operator" value="+">+</button>
+        </div> 
+    </div>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
