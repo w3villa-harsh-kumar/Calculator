@@ -82,7 +82,7 @@ function handleKeyPressAndCalculation(self){
     // If the value is a decimal, add it to the input
     if(value === '.'){
         if(input.value==="Error"){
-            input.value = value;
+            input.value = 0.0;
             return;
         }
 
@@ -107,7 +107,7 @@ function handleKeyPressAndCalculation(self){
     // If the value is an equal sign, evaluate the input
     if(value === "="){
         if(input.value==="Error"){
-            input.value = value;
+            input.value = 0;
             return;
         }
 
@@ -123,7 +123,7 @@ function handleKeyPressAndCalculation(self){
     // If the value is a backspace, remove the last character
     if(value === 'backspace'){
         if(input.value==="Error"){
-            input.value = value;
+            input.value = 0;
             return;
         }
 
